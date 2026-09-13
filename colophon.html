@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How the Universal clothing store website was built - tools, structure and process.">
+  <meta name="author" content="REi Meirbek">
+  <title>Universal - About This Site</title>
+</head>
+<body>
+  <!-- Page author: REi Meirbek -->
+
+  <header>
+    <h1>About This Site</h1>
+    <p>How this website was built</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="colophon.html">About this site</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section>
+      <h2>Tools used</h2>
+      <p>
+        This website was built entirely by hand using plain HTML, with no
+        CSS, JavaScript or site builders. The code was written in
+        <strong>Visual Studio Code</strong> and viewed directly in the
+        browser as local files.
+      </p>
+    </section>
+
+    <section>
+      <h2>Project structure</h2>
+      <p>The project folder is organized like this:</p>
+      <pre><code>ass1/
+  index.html
+  products.html
+  contact.html
+  colophon.html
+  images/
+    autumn-collection.jpg</code></pre>
+    </section>
+
+    <section>
+      <h2>Working with Git</h2>
+      <p>
+        Every page was tracked with Git and pushed to a GitHub repository.
+        After editing a file, the following commands were used to save the
+        change and upload it:
+      </p>
+      <p>
+        First, stage the changed files with <kbd>git add .</kbd>, then
+        record the change with <kbd>git commit -m "message"</kbd>, and
+        finally upload it with <kbd>git push</kbd>.
+      </p>
+      <p>
+        A typical successful push looks like this in the terminal:
+      </p>
+      <pre><samp>Enumerating objects: 3, done.
+Writing objects: 100% (3/3), done.
+To https://github.com/bazarzok95-art/universal-site.git
+ * [new branch]      main -> main</samp></pre>
+    </section>
+
+    <section>
+      <h2>Notes on the markup</h2>
+      <p>
+        Semantic tags such as <code>&lt;header&gt;</code>,
+        <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code> and
+        <code>&lt;footer&gt;</code> were used on every page instead of
+        generic <code>&lt;div&gt;</code> elements wherever a matching tag
+        existed. A <code>&lt;div&gt;</code> was only used where nothing
+        semantic fit better.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Address: Kyzyl Tobe street, 2, 756/4, Aktau</p>
+    <p>Phone: +7 778 985 24 35</p>
+    <p>&copy; 2026 Universal</p>
+  </footer>
+
+</body>
+</html>
