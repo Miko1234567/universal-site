@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact information, working hours and a feedback form for Universal clothing store in Aktau.">
+  <meta name="author" content="REi Meirbek">
+  <title>Universal - Contact Us</title>
+</head>
+<body>
+  <!-- Page author: REi Meirbek -->
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>Visit us or send a message</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="colophon.html">About this site</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="details">
+      <h2>Store Details</h2>
+      <dl>
+        <dt>Address</dt>
+        <dd>Kyzyl Tobe street, 2, 756/4, Aktau</dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+77789852435">+7 778 985 24 35</a></dd>
+        <dt>Working hours</dt>
+        <dd>Every day, <strong>09:00</strong> to <strong>19:30</strong></dd>
+      </dl>
+
+      <p>Departments in the store:</p>
+      <ul>
+        <li>Men's clothing
+          <ul>
+            <li>T-shirts and shirts</li>
+            <li>Jackets and coats</li>
+          </ul>
+        </li>
+        <li>Women's clothing
+          <ul>
+            <li>Dresses</li>
+            <li>Sweaters</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <aside>
+      <!-- "aside" used because this is a customer opinion, related to the page
+           but not the main content flow - a plain div would hide that meaning. -->
+      <h2>What customers say</h2>
+      <blockquote cite="#">
+        <p>The staff helped me find the right size in five minutes, and the prices are fair for the quality.</p>
+      </blockquote>
+      <p>- <cite>Aigerim T.</cite>, customer, September 2026</p>
+    </aside>
+
+    <section>
+      <h2>Find Us</h2>
+      <p>
+        Read more about how this site was put together on the
+        <a href="colophon.html">About this site</a> page, or check the
+        store's listing on <a href="https://www.google.com/maps" target="_blank" rel="noopener">Google Maps</a>
+        for directions.
+      </p>
+    </section>
+
+    <section>
+      <h2>Send Us a Message</h2>
+      <form method="post" action="#">
+        <!-- This form does not send any data yet - there is no server behind it.
+             Server-side handling will be added later in the course. -->
+        <fieldset>
+          <legend>Feedback Form</legend>
+
+          <p>
+            <label for="fullname">Full name</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Your name" required>
+          </p>
+
+          <p>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </p>
+
+          <p>
+            <label for="phone">Phone</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+7 7XX XXX XX XX">
+          </p>
+
+          <p>
+            <label for="visits">Number of visits so far</label><br>
+            <input type="number" id="visits" name="visits" min="0">
+          </p>
+
+          <p>
+            <label for="visitdate">Preferred contact date</label><br>
+            <input type="date" id="visitdate" name="visitdate">
+          </p>
+
+          <fieldset>
+            <legend>How did you hear about us?</legend>
+            <input type="radio" id="source-friend" name="source" value="friend">
+            <label for="source-friend">Friend</label><br>
+            <input type="radio" id="source-social" name="source" value="social">
+            <label for="source-social">Social media</label><br>
+            <input type="radio" id="source-walk" name="source" value="walkby">
+            <label for="source-walk">Walking by</label>
+          </fieldset>
+
+          <p>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Notify me about new arrivals</label>
+          </p>
+
+          <p>
+            <label for="topic">Topic</label><br>
+            <select id="topic" name="topic">
+              <option value="general">General question</option>
+              <option value="order">Order</option>
+              <option value="complaint">Complaint</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here"></textarea>
+          </p>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Address: Kyzyl Tobe street, 2, 756/4, Aktau</p>
+    <p>Phone: <a href="tel:+77789852435">+7 778 985 24 35</a></p>
+    <p>Email: <a href="mailto:info@universal-store.kz">info@universal-store.kz</a></p>
+    <p>&copy; 2026 Universal</p>
+  </footer>
+
+</body>
+</html>
