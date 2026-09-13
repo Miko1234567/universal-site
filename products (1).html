@@ -8,7 +8,7 @@
   <title>Universal - Product Range</title>
 </head>
 <body>
-  <!-- Page author: Reom Meirbek -->
+  <!-- Page author: REi Meirbek -->
 
   <header>
     <h1>Product Range</h1>
@@ -71,6 +71,9 @@
 
     <article id="featured">
       <h2>Featured: Autumn Collection</h2>
+      <!-- "article" is used here rather than a plain div because this block
+           stands on its own - it could be pulled out and published separately
+           (e.g. as a social media post) and still make full sense. -->
       <figure>
         <img src="images/autumn-collection.jpg" alt="Row of autumn jackets and sweaters on display in the Universal store">
         <figcaption>Part of the autumn collection currently on display in the store.</figcaption>
@@ -82,6 +85,8 @@
       </p>
     </article>
 
+    <hr>
+
     <section>
       <h2>How to order in person</h2>
       <ol start="1">
@@ -90,6 +95,33 @@
         <li>Try it on in the fitting room.</li>
         <li>Pay at the counter (cash or card).</li>
       </ol>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Care Instructions</h2>
+      <p>
+        <b>New!</b> Most of our cotton items should be washed on a
+        <i>delicate</i> cycle<sup>1</sup> to keep their shape &mdash; this is
+        <em>especially</em> important for the darker colours.
+      </p>
+      <p><small><sup>1</sup> See the label sewn inside each garment for exact care instructions.</small></p>
+      <p>
+        As one staff member put it, <q>we'd rather you ask about sizing
+        than guess and be disappointed.</q>
+      </p>
+      <div>
+        <!-- "div" is used here because this box mixes a price note and a
+             general disclaimer - it isn't a section, aside or article on its
+             own, so no single semantic tag matched it. -->
+        <p>
+          Prices shown are current as of <span>September 2026</span> &amp; may
+          change without notice&nbsp;- please ask staff to confirm.
+          <!-- "span" wraps just the date so it could later be styled or
+               updated independently - no block-level meaning is implied here. -->
+        </p>
+      </div>
     </section>
 
   </main>
