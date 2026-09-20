@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Universal - a clothing store on Kyzyl Tobe street in Aktau. Products, contact information and working hours.">
-  <meta name="author" content="REi Meirbek">
-  <title>Universal - Clothing Store</title>
+  <title>Universal - Home</title>
+  <!-- CSS файлдарды дұрыс ретпен қосу -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/meirbek.css">
 </head>
 <body>
 
-  <!-- Page author: Reim Meirbek -->
-  <header>
+  <!-- Шапка -->
+  <header class="main-header">
     <h1>Universal</h1>
-    <p>A trusted clothing store in Aktau</p>
+    <p class="subtitle">A trusted clothing store in Aktau</p>
   </header>
 
-  <nav>
+  <!-- Навигация -->
+  <nav class="primary-nav">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="products.html">Products</a></li>
@@ -24,34 +26,24 @@
     </ul>
   </nav>
 
-  <main>
-
-    <section>
+  <!-- Негізгі контент -->
+  <main class="content-area">
+    <section class="info-card">
       <h2>About the store</h2>
-      <p>
-        Universal is a clothing store located on Kyzyl Tobe street in Aktau, Kazakhstan.
-        Here you can find everything from everyday wear to outfits for special occasions.
-        The store focuses on quality service and affordable prices for every customer.
-        Our regular customers trust us because we carefully select every item we sell.
-        Feel free to stop by any time and pick out the clothing that suits you best.
-      </p>
+      <p>Universal is a clothing store located on Kyzyl Tobe street in Aktau, Kazakhstan. Here you can find everything from everyday wear to outfits for special occasions. The store focuses on quality service and affordable prices for every customer. Our regular customers trust us because we carefully select every item we sell. Feel free to stop by any time and pick out the clothing that suits you best.</p>
     </section>
 
-    <section>
+    <section class="info-card">
       <h2>Working hours</h2>
       <p>We are open every day of the week from <strong>09:00 to 19:30</strong>.</p>
+      <p>Check out our <a href="products.html" class="cta-link">Products</a> page to see our latest arrivals.</p>
+      <p>Address: Kyzyl Tobe street, 2, 756/4, Aktau</p>
     </section>
-
-    <aside>
-      <p>Check out our <a href="products.html">Products</a> page to see our latest arrivals.</p>
-    </aside>
-
   </main>
 
-  <footer>
-    <p>Address: Kyzyl Tobe street, 2, 756/4, Aktau</p>
-    <p>Phone: +7 778 985 24 35</p>
-    <p>&copy; 2026 Universal</p>
+  <!-- Подвал -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Universal Store. All rights reserved.</p>
   </footer>
 
 </body>

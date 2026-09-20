@@ -3,19 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="How the Universal clothing store website was built - tools, structure and process.">
+  <meta name="description" content="Technical details about the Universal website - HTML5, CSS structure and development notes.">
   <meta name="author" content="REi Meirbek">
   <title>Universal - About This Site</title>
+
+  <!-- CSS файлдарды қосу -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/meirbek.css">
 </head>
 <body>
-  <!-- Page author: REIM Meirbek -->
 
-  <header>
-    <h1>About This Site</h1>
-    <p>How this website was built</p>
+  <!-- Шапка -->
+  <header class="main-header">
+    <h1 id="page-title">About This Site</h1>
+    <p class="subtitle">Technical colophon and project background</p>
   </header>
 
-  <nav>
+  <!-- Навигация -->
+  <nav class="primary-nav">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="products.html">Products</a></li>
@@ -24,69 +29,55 @@
     </ul>
   </nav>
 
-  <main>
+  <!-- Негізгі контент -->
+  <main class="content-area">
 
-    <section>
-      <h2>Tools used</h2>
+    <section class="info-card">
+      <h2>Project Overview</h2>
       <p>
-        This website was built entirely by hand using plain HTML, with no
-        CSS, JavaScript or site builders. The code was written in
-        <strong>Visual Studio Code</strong> and viewed directly in the
-        browser as local files.
+        This website was developed as part of the Web Frontend Development course assignment. 
+        It demonstrates pure HTML5 markup and custom CSS3 styling without using any third-party frameworks like Bootstrap or Tailwind.
       </p>
     </section>
 
-    <section>
-      <h2>Project structure</h2>
-      <p>The project folder is organized like this:</p>
-      <pre><code>ass1/
-  index.html
-  products.html
-  contact.html
-  colophon.html
-  images/
-    autumn-collection.jpg</code></pre>
-    </section>
+    <!-- Grid Container Demonstration -->
+    <div class="contact-grid">
 
-    <section>
-      <h2>Working with Git</h2>
-      <p>
-        Every page was tracked with Git and pushed to a GitHub repository.
-        After editing a file, the following commands were used to save the
-        change and upload it:
-      </p>
-      <p>
-        First, stage the changed files with <kbd>git add .</kbd>, then
-        record the change with <kbd>git commit -m "message"</kbd>, and
-        finally upload it with <kbd>git push</kbd>.
-      </p>
-      <p>
-        A typical successful push looks like this in the terminal:
-      </p>
-      <pre><samp>Enumerating objects: 3, done.
-Writing objects: 100% (3/3), done.
-To https://github.com/bazarzok95-art/universal-site.git
- * [new branch]      main -> main</samp></pre>
-    </section>
+      <section class="info-card">
+        <h2>Technology Stack</h2>
+        <ul>
+          <li><strong>HTML5:</strong> Semantic tags (`header`, `nav`, `main`, `section`, `article`, `footer`)</li>
+          <li><strong>CSS3:</strong> Custom layouts using Flexbox and CSS Grid</li>
+          <li><strong>Typography:</strong> System font stacks for optimal performance</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Notes on the markup</h2>
-      <p>
-        Semantic tags such as <code>&lt;header&gt;</code>,
-        <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code> and
-        <code>&lt;footer&gt;</code> were used on every page instead of
-        generic <code>&lt;div&gt;</code> elements wherever a matching tag
-        existed. A <code>&lt;div&gt;</code> was only used where nothing
-        semantic fit better.
-      </p>
+      <section class="info-card">
+        <h2>Design Principles</h2>
+        <ul>
+          <li><strong>Color Palette:</strong> Restricted to 5 core colors for visual consistency</li>
+          <li><strong>Responsive Layout:</strong> Flexible grids adapting to screen widths</li>
+          <li><strong>Accessibility:</strong> High contrast ratios and clear focus states</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <section class="info-card">
+      <h2>Author &amp; Course Info</h2>
+      <p><strong>Developer:</strong> REi Meirbek</p>
+      <p><strong>Course:</strong> Web Frontend Development (Assignment 2: CSS Fundamentals &amp; Layouts)</p>
+      <p><strong>Year:</strong> 2026</p>
+      <p>Return to the <a href="index.html" class="cta-link">Home page</a> or check our <a href="products.html" class="cta-link">Products</a>.</p>
     </section>
 
   </main>
 
-  <footer>
+  <!-- Подвал -->
+  <footer class="site-footer">
     <p>Address: Kyzyl Tobe street, 2, 756/4, Aktau</p>
     <p>Phone: +7 778 985 24 35</p>
-    <p>&copy; 2026 Universal</p>
+    <p id="copyright">&copy; 2026 Universal</p>
   </footer>
 
 </body>

@@ -3,19 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact information, working hours and a feedback form for Universal clothing store in Aktau.">
+  <meta name="description" content="Contact Universal clothing store in Aktau - address, phone numbers, working hours and feedback form.">
   <meta name="author" content="REi Meirbek">
   <title>Universal - Contact Us</title>
+
+  <!-- CSS файлдарды қосу -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/meirbek.css">
 </head>
 <body>
-  <!-- Page author: REIM Meirbek -->
 
-  <header>
-    <h1>Contact Us</h1>
-    <p>Visit us or send a message</p>
+  <!-- Шапка -->
+  <header class="main-header">
+    <h1 id="page-title">Contact Us</h1>
+    <p class="subtitle">How to find us and get in touch</p>
   </header>
 
-  <nav>
+  <!-- Навигация -->
+  <nav class="primary-nav">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="products.html">Products</a></li>
@@ -24,127 +29,61 @@
     </ul>
   </nav>
 
-  <main>
+  <!-- Негізгі контент -->
+  <main class="content-area">
 
-    <section id="details">
-      <h2>Store Details</h2>
-      <dl>
-        <dt>Address</dt>
-        <dd>Kyzyl Tobe street, 2, 756/4, Aktau</dd>
-        <dt>Phone</dt>
-        <dd><a href="tel:+77789852435">+7 778 985 24 35</a></dd>
-        <dt>Working hours</dt>
-        <dd>Every day, <strong>09:00</strong> to <strong>19:30</strong></dd>
-      </dl>
+    <!-- Flexbox Container Demonstration -->
+    <div class="contact-flex-container">
 
-      <p>Departments in the store:</p>
-      <ul>
-        <li>Men's clothing
-          <ul>
-            <li>T-shirts and shirts</li>
-            <li>Jackets and coats</li>
-          </ul>
-        </li>
-        <li>Women's clothing
-          <ul>
-            <li>Dresses</li>
-            <li>Sweaters</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+      <section class="info-card flex-item">
+        <h2>Store Location</h2>
+        <address>
+          <strong>Universal Clothing Store</strong><br>
+          Kyzyl Tobe street, 2, 756/4<br>
+          Aktau, Mangystau Region<br>
+          Kazakhstan
+        </address>
+        <p class="opening-hours"><strong>Working Hours:</strong> Monday &ndash; Sunday: 09:00 &ndash; 19:30</p>
+      </section>
 
-    <aside>
-      <h2>What customers say</h2>
-      <blockquote cite="#">
-        <p>There are many discounts and attractive offers here, and you can bargain.</p>
-      </blockquote>
-      <p>- <cite>Aigerim T.</cite>, customer, September 2026</p>
-    </aside>
+      <section class="info-card flex-item">
+        <h2>Phone &amp; Online</h2>
+        <p><strong>Phone / WhatsApp:</strong> <a href="tel:+77789852435">+7 778 985 24 35</a></p>
+        <p><strong>Instagram:</strong> @universal_aktau</p>
+        <p>For questions about <a href="products.html" class="cta-link">current stock or prices</a>, please call or visit us during opening hours.</p>
+      </section>
 
-    <section>
-      <h2>Find Us</h2>
-      <p>
-        Read more about how this site was put together on the
-        <a href="colophon.html">About this site</a> page, or check the
-        store's listing on <a href="https://www.google.com/maps/https://2gis.kz/aktau/geo/70030077182215647/51.34965%2C43.677884" target="_blank" rel="noopener">Google Maps</a>
-        for directions.
-      </p>
-    </section>
+    </div>
 
-    <section>
-      <h2>Send Us a Message</h2>
-      <form method="post" action="#">
-        <fieldset>
-          <legend>Feedback Form</legend>
-
-          <p>
-            <label for="fullname">Full name</label><br>
-            <input type="text" id="fullname" name="fullname" placeholder="Your name" required>
-          </p>
-
-          <p>
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required>
-          </p>
-
-          <p>
-            <label for="phone">Phone</label><br>
-            <input type="tel" id="phone" name="phone" placeholder="+7 7XX XXX XX XX">
-          </p>
-
-          <p>
-            <label for="visits">Number of visits so far</label><br>
-            <input type="number" id="visits" name="visits" min="0">
-          </p>
-
-          <p>
-            <label for="visitdate">Preferred contact date</label><br>
-            <input type="date" id="visitdate" name="visitdate">
-          </p>
-
-          <fieldset>
-            <legend>How did you hear about us?</legend>
-            <input type="radio" id="source-friend" name="source" value="friend">
-            <label for="source-friend">Friend</label><br>
-            <input type="radio" id="source-social" name="source" value="social">
-            <label for="source-social">Social media</label><br>
-            <input type="radio" id="source-walk" name="source" value="walkby">
-            <label for="source-walk">Walking by</label>
-          </fieldset>
-
-          <p>
-            <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">Notify me about new arrivals</label>
-          </p>
-
-          <p>
-            <label for="topic">Topic</label><br>
-            <select id="topic" name="topic">
-              <option value="general">General question</option>
-              <option value="order">Order</option>
-              <option value="complaint">Complaint</option>
-            </select>
-          </p>
-
-          <p>
-            <label for="message">Message</label><br>
-            <textarea id="message" name="message" rows="4" placeholder="Write your message here"></textarea>
-          </p>
-
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
-        </fieldset>
+    <!-- Feedback Form Section -->
+    <section class="info-card">
+      <h2>Send us a message</h2>
+      <form action="#" method="post" class="contact-form">
+        <p>
+          <label for="user-name">Your Name:</label><br>
+          <input type="text" id="user-name" name="name" required placeholder="Enter your name">
+        </p>
+        <p>
+          <label for="user-email">Email or Phone:</label><br>
+          <input type="text" id="user-email" name="contact_info" required placeholder="Email or phone number">
+        </p>
+        <p>
+          <label for="user-message">Message:</label><br>
+          <textarea id="user-message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+        </p>
+        <p>
+          <button type="submit" class="cta-link" style="padding: 8px 16px; cursor: pointer;">Send Message</button>
+        </p>
       </form>
     </section>
 
   </main>
 
-  <footer>
+  <!-- Подвал -->
+  <footer class="site-footer">
     <p>Address: Kyzyl Tobe street, 2, 756/4, Aktau</p>
-    <p>Phone: <a href="tel:+77789852435">+7 778 985 24 35</a></p>
-    <p>Email: <a href="mailto:Bekmurat1980kz7@gmail.com">info@universal-store.kz</a></p>
-    <p>&copy; 2026 Universal</p>
+    <p>Phone: +7 778 985 24 35</p>
+    <p id="copyright">&copy; 2026 Universal</p>
   </footer>
 
 </body>

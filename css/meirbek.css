@@ -1,0 +1,161 @@
+    /* ==========================================================================
+   PERSONAL STYLESHEET - REi Meirbek
+   ========================================================================== */
+
+/* 1. SELECTORS REQUIREMENTS DEMONSTRATION */
+
+/* Type Selector */
+figcaption {
+  font-size: 14px;
+  font-style: italic;
+  color: #555555;
+  margin-top: 5px;
+}
+
+/* Descendant Selector */
+.info-card p {
+  color: #2c3e50;
+}
+
+/* Child Selector (>) */
+.primary-nav > ul {
+  margin: 0 auto;
+}
+
+/* Adjacent Sibling Selector (+) */
+h2 + p {
+  margin-top: 8px;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 100%;
+}
+
+/* Focus Pseudo-class */
+input:focus, textarea:focus {
+  outline: 2px solid #3498db;
+}
+
+/* Structural Pseudo-class (:first-child) */
+.price-table tbody tr:first-child {
+  font-weight: bold;
+}
+
+/* Pseudo-element (::before) */
+.opening-hours::before {
+  content: "🕒 ";
+}
+
+
+/* 2. SPECIFICITY EXPERIMENT (REQUIREMENT)
+   Conflict targeting the same element on purpose.
+   -------------------------------------------------------------------------- */
+
+/* Rule A: Class selector (Specificity 0,0,1,0) - Wins */
+.cta-link {
+  color: #e74c3c;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Rule B: Element selector (Specificity 0,0,0,1) - Loses */
+a {
+  color: #3498db;
+}
+/* Resolution: .cta-link wins over 'a' due to higher selector specificity. */
+
+
+/* 3. FLEXBOX CONTAINER WITH WRAP (REQUIREMENT) */
+.contact-flex-container, .flex-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.flex-item, .card-item {
+  flex: 1 1 250px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #dcdde1;
+}
+
+
+/* 4. CSS GRID LAYOUT REQUIREMENT */
+.grid-container, .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+
+/* 5. POSITIONING (Static, Relative, Absolute) */
+
+/* Position Static */
+.static-demo {
+  position: static;
+}
+
+/* Position Relative (Parent container for badge) */
+.relative-box {
+  position: relative;
+}
+
+/* Position Absolute (Badge placed relative to container) */
+.sale-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red; /* Named color requirement */
+  color: #ffffff;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+
+/* 6. FLOAT & CLEAR REQUIREMENT */
+.floated-thumb {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: auto;
+}
+
+/* Clear Fix */
+.clear-fix {
+  clear: both;
+}
+
+
+/* 7. CENTERING TECHNIQUES */
+
+/* Method 1: Flexbox Centering */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Method 2: Grid Centering */
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+/* Method 3: Absolute Centering */
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

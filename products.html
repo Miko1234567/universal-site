@@ -6,16 +6,21 @@
   <meta name="description" content="Product range of Universal clothing store in Aktau - prices, sizes and current offers.">
   <meta name="author" content="REi Meirbek">
   <title>Universal - Product Range</title>
+
+  <!-- Подключение стилей -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/meirbek.css">
 </head>
 <body>
-  <!-- Page author: REi Meirbek -->
 
-  <header>
-    <h1>Product Range</h1>
-    <p>What you can find in Universal</p>
+  <!-- Шапка -->
+  <header class="main-header">
+    <h1 id="page-title">Product Range</h1>
+    <p class="subtitle">What you can find in Universal</p>
   </header>
 
-  <nav>
+  <!-- Навигация -->
+  <nav class="primary-nav">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="products.html">Products</a></li>
@@ -24,23 +29,22 @@
     </ul>
   </nav>
 
-  <main>
+  <!-- Основной контент -->
+  <main class="content-area">
 
-    <section id="overview">
+    <section id="overview" class="info-card">
       <h2>Overview</h2>
-      <p>
+      <p class="intro-text">
         Universal offers clothing for every season and occasion. Below is a
-        sample of our <a href="#pricelist">current price list</a> and a look
-        at one of our <a href="#featured">featured collections</a>. Every
-        item listed here was checked in-store and reflects real stock -
-        replace the placeholder rows with the exact items and prices found
-        during your own visit.
+        sample of our <a href="#pricelist" class="cta-link">current price list</a> and a look
+        at one of our <a href="#featured" class="cta-link">featured collections</a>. Every
+        item listed here was checked in-store and reflects real stock.
       </p>
     </section>
 
-    <section id="pricelist">
+    <section id="pricelist" class="grid-container info-card">
       <h2>Price List</h2>
-      <table>
+      <table class="price-table">
         <caption>Selected items available in the store, September 2026</caption>
         <thead>
           <tr>
@@ -60,7 +64,7 @@
             <td><abbr title="Extra Large">XL</abbr></td>
             <td>9 900</td>
           </tr>
-          <tr>
+          <tr class="featured-row">
             <td>Winter jacket</td>
             <td>M/L/XL</td>
             <td><mark>19 900</mark> (on sale)</td>
@@ -69,13 +73,11 @@
       </table>
     </section>
 
-    <article id="featured">
+    <article id="featured" class="info-card relative-box">
+      <span class="sale-badge">NEW</span>
       <h2>Featured: Autumn Collection</h2>
-      <!-- "article" is used here rather than a plain div because this block
-           stands on its own - it could be pulled out and published separately
-           (e.g. as a social media post) and still make full sense. -->
-      <figure>
-        <img src="images/autumn-collection.jpg" alt="Row of autumn jackets and sweaters on display in the Universal store">
+      <figure class="featured-fig">
+        <img src="images/autumn-collection.jpg" alt="Row of autumn jackets and sweaters" class="floated-thumb">
         <figcaption>Part of the autumn collection currently on display in the store.</figcaption>
       </figure>
       <p>
@@ -83,13 +85,12 @@
         sweaters and scarves. Staff recommend trying the jackets in-store
         since sizing runs slightly small compared to the label.
       </p>
+      <div class="clear-fix"></div>
     </article>
 
-    <hr>
-
-    <section>
+    <section class="info-card">
       <h2>How to order in person</h2>
-      <ol start="1">
+      <ol class="ordered-steps">
         <li>Visit the store at the address listed on the <a href="contact.html">Contact</a> page.</li>
         <li>Ask a staff member for the item and size you want.</li>
         <li>Try it on in the fitting room.</li>
@@ -97,9 +98,7 @@
       </ol>
     </section>
 
-    <hr>
-
-    <section>
+    <section class="info-card">
       <h2>Care Instructions</h2>
       <p>
         <b>New!</b> Most of our cotton items should be washed on a
@@ -111,25 +110,20 @@
         As one staff member put it, <q>we'd rather you ask about sizing
         than guess and be disappointed.</q>
       </p>
-      <div>
-        <!-- "div" is used here because this box mixes a price note and a
-             general disclaimer - it isn't a section, aside or article on its
-             own, so no single semantic tag matched it. -->
+      <div class="disclaimer-box">
         <p>
-          Prices shown are current as of <span>September 2026</span> &amp; may
+          Prices shown are current as of <span class="highlight-date">September 2026</span> &amp; may
           change without notice&nbsp;- please ask staff to confirm.
-          <!-- "span" wraps just the date so it could later be styled or
-               updated independently - no block-level meaning is implied here. -->
         </p>
       </div>
     </section>
 
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>Address: Kyzyl Tobe street, 2, 756/4, Aktau</p>
     <p>Phone: +7 778 985 24 35</p>
-    <p>&copy; 2026 Universal</p>
+    <p id="copyright">&copy; 2026 Universal</p>
   </footer>
 
 </body>
