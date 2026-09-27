@@ -1,0 +1,17 @@
+REMOVED CSS RULES & BOOTSTRAP REPLACEMENTS
+Developer: REIM MEIRBEK
+
+1. Custom Flexbox & Grid Layouts (.contact-flex-container, .grid-container)
+   - Replaced by: Bootstrap Grid System (.row, .col-12, .col-md-6, .col-lg-4, .g-4)
+
+2. Manual Navigation Styling (.primary-nav, ul, li)
+   - Replaced by: Bootstrap Navbar Component (.navbar, .navbar-expand-md, .nav-link, .navbar-toggler)
+
+3. Form Styling (input, textarea, button)
+   - Replaced by: Bootstrap Forms & Buttons (.form-control, .btn, .btn-primary, .btn-outline-primary)
+
+4. Manual Cards & Spacing (.info-card, .flex-item)
+   - Replaced by: Bootstrap Cards & Utility Spacing (.card, .card-body, .p-4, .mb-4, .shadow-sm)
+
+5. Table Layout & Borders (.price-table)
+   - Replaced by: Bootstrap Table Utilities (.table, .table-striped, .table-hover, .table-bordered)
