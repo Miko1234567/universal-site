@@ -1,49 +1,23 @@
+/* --------------------------------------------------
+Custom Correction Layer for Universal Store
+-------------------------------------------------- */
 
-h1, h2, h3 {
-  letter-spacing: -0.5px;
-}
+/* Pre-defined state classes for upcoming JavaScript interactions */
 
-.table caption {
-  caption-side: bottom;
-}
-
-.badge {
-  font-weight: 500;
-  letter-spacing: 0.3px;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
-}
-.main-header h1, 
-header h1 {
-  color: #ffffff !important;
-}
-
-.main-header p,
-header p {
-  color: #e0e0e0 !important;
-}
 .is-hidden {
-  display: none !important;
+display: none !important;
 }
 
 .is-active {
-  border: 2px solid #0d6efd !important;
+border: 2px solid #0d6efd !important;
 }
 
 .is-error {
-  border-color: #dc3545 !important;
-  background-color: #f8d7da !important;
+border-color: #dc3545 !important;
+background-color: #f8d7da !important;
 }
 
 .is-success {
-  border-color: #198754 !important;
-  background-color: #d1e7dd !important;
+border-color: #198754 !important;
+background-color: #d1e7dd !important;
 }
